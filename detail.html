@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy's Hair Beauty Details</title>
+    <link rel="stylesheet" href="details.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <nav class="site-nav" aria-label="Primary">
+        <a href="joy.html">Home</a> |
+        <a href="joyStyles.html">Styles</a> |
+        <a href="detail.html">Details</a>
+    </nav>
+
+<div class="container">
+    <h1>Joy's  Details</h1>
+    <!-- Profile photo (place joy.jpg in the project root) -->
+    <!-- Clicking this image will expand it inline below -->
+    <img id="clickable-image" src="joy.jpg" alt="Photo of Joy" class="profile-photo" tabindex="0" data-caption="Joy Amukelani" />
+
+
+    <!-- Inline enlarged used previously removed — using full-page overlay lightbox instead -->
+    <!-- Replace with actual image URL -->
+    <p><strong>Name:</strong> Joy Amukelani</p>
+    <p><strong>Description:</strong> Joy is a passionate hair stylist dedicated to helping clients look and feel their best. With a keen eye for trends and a love for hair care, she transforms styles and enhances beauty.</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/2765641117">0765641117</a></p>
+    <p><strong>Location:</strong> Yale Village</p>
+    <p><strong>For Calls:</strong> 0765641117 / 0718498149</p>
+    <a href="joy.html" class="back-button">Back to Home</a>
+</div>
+
+<!-- Lightbox overlay (hidden by default) -->
+<div id="overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview" style="display:none;">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close">×</button>
+    <figure class="lightbox-figure">
+        <img id="enlarged-image" src="" alt="Enlarged photo of Joy" />
+        <figcaption id="lightbox-caption" class="lightbox-caption">Joy Amukelani</figcaption>
+    </figure>
+</div>
+
+<script src="joy.js"></script>
+</body>
+</html>
